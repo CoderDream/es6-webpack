@@ -27,6 +27,10 @@ npm start
 
 ----------
 
+
+[TOC] 
+
+
 ## ES6快速入门 ##
  
 快乐动起来呀
@@ -456,6 +460,6 @@ console.log('ES6 利用扩展运算符合并数组');
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0205.png)
 
-![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0205.png)
+![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0206.png)
 
 
