@@ -1,54 +1,72 @@
 // ES5 中作用域
-const callbacks = []
+const callbacks = [];
 for (var i = 0; i <= 2; i++) {
-    callbacks[i] = function() {
-        return i * 2
+    callbacks[i] = function () {
+        return i * 2;
     }
 }
 
+// 6,6,6
 console.table([
     callbacks[0](),
     callbacks[1](),
     callbacks[2](),
-])
+]);
 
-const callbacks2 = []
+// ES6 中作用域
+const callbacks2 = [];
 for (let j = 0; j <= 2; j++) {
-    callbacks2[j] = function() {
+    callbacks2[j] = function () {
         return j * 2
     }
 }
 
+// 0,2,4
 console.table([
     callbacks2[0](),
     callbacks2[1](),
     callbacks2[2](),
-])
-;((function() {
-    const foo = function() {
-        return 1
-    }
-    console.log("foo()===1", foo() === 1)
-    ;((function() {
-        const foo = function() {
-            return 2
-        }
-        console.log("foo()===2", foo() === 2)
-    })())
-})())
+]);
 
+// ES5 块作用域
+((function () {
+    const foo = function () {
+        return 1;
+    };
+    console.log("foo()===1", foo() === 1);
+    ((function () {
+        const foo = function () {
+            return 2;
+        };
+        console.log("foo()===2", foo() === 2);
+    })());
+})());
+
+// ES6
+// 花括号指定块作用域
 {
     function foo() {
-        return 1
+        return 1;
     }
 
-    console.log("foo()===1", foo() === 1)
+    console.log("foo()===1", foo() === 1);
+    // 新作用域
     {
         function foo() {
-            return 2
+            return 2;
         }
 
-        console.log("foo()===2", foo() === 2)
+        console.log("foo()===2", foo() === 2);
     }
-    console.log("foo()===1", foo() === 1)
+    // 原作用域
+    console.log("foo()===1", foo() === 1);
 }
+// var aaa={a:"a",b:"b"};
+// var funList={};
+// for(var key in aaa){
+//     var fn= funList[key]= function (c,d) {
+//         return augments.callee.param+c+d;
+//     }
+//     fn.param=aaa[key];
+// }
+// funList.a(1,2);

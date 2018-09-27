@@ -3,5 +3,5 @@
  * @returns {[type]} [description]
  */
 export default function() {
-    window.console.log("a")
+    window.console.log("b")
 }
