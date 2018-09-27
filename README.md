@@ -86,10 +86,14 @@ export default function() {
 }
 ```
 在浏览器中打开
+
+
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0101.png)
 
 ## 第2章 ES6基础 ###
+
 通过对比的方式讲解常量、作用域、箭头函数、默认参数、对象代理等知识点
+
 ### 2-1 常量 (06:29) ### 
 
 
@@ -109,6 +113,7 @@ console.log(PI);
 // PI = 4; // 编译出错
 ```
 运行结果：
+
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0201.png)
 
@@ -252,6 +257,7 @@ console.log('ES6');
 ```
 
 运行结果：
+
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0203.png)
 
 ### 2-4 默认参数 (17:00) ### 
@@ -447,6 +453,7 @@ console.log('ES6 利用扩展运算符合并数组');
 
 
 运行结果：
+
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0205.png)
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0205.png)
