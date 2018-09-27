@@ -35,7 +35,8 @@ Web前端工程师 难度初级 时长 1小时25分 学习人数38905 综合评�
 
 [课程地址](https://www.imooc.com/learn/955)
 
-###  简介：### 
+###  简介： ###
+
 ES6增加了很多新的语法，很多同学学习起来感觉很别扭，有时候也不理解新增加的语法有什么用，对ES6的学习也没有兴趣进而动力不足、学习效率不高。本课程通过ES3、ES5、ES6的对比去实现同一个问题，学员可以非常容易的理解和掌握ES6的强大并产生学习的兴趣。
 
 ### 课程须知 ###
@@ -85,7 +86,7 @@ export default function() {
 }
 ```
 在浏览器中打开
-
+![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0101.png)
 
 ## 第2章 ES6基础 ###
 通过对比的方式讲解常量、作用域、箭头函数、默认参数、对象代理等知识点
@@ -109,7 +110,7 @@ console.log(PI);
 ```
 运行结果：
 
-
+![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0201.png)
 
 ### 2-2 作用域 (14:27) ### 
 
@@ -182,6 +183,7 @@ console.table([
 
 运行结果：
 
+![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0202.png)
 
 ### 2-3 箭头函数 (11:19) ### 
 
@@ -249,8 +251,8 @@ console.log('ES6');
 }
 ```
 
-
 运行结果：
+![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0203.png)
 
 ### 2-4 默认参数 (17:00) ### 
 
@@ -343,9 +345,9 @@ console.log('ES6 利用扩展运算符合并数组');
 }
 
 ```
-
-
 运行结果：
+
+![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0204.png)
 
 ### 2-5 对象代理 (18:52) ### 
 
@@ -445,6 +447,8 @@ console.log('ES6 利用扩展运算符合并数组');
 
 
 运行结果：
+![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0205.png)
 
+![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0205.png)
 
 
