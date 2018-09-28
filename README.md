@@ -1,64 +1,80 @@
-## es6-webpack
+-   [es6-webpack](#es6-webpack)
+    -   [安装](#安装)
+    -   [运行](#运行)
+-   [ES6快速入门](#es6快速入门)
+    -   [简介：](#简介)
+    -   [课程须知](#课程须知)
+-   [第1章 课程介绍](#第1章-课程介绍)
+    -   [1-2 环境搭建 (10:16)](#环境搭建-1016)
+-   [第2章 ES6基础](#第2章-es6基础)
+    -   [2-1 常量 (06:29)](#常量-0629)
+    -   [2-2 作用域 (14:27)](#作用域-1427)
+    -   [2-3 箭头函数 (11:19)](#箭头函数-1119)
+    -   [2-4 默认参数 (17:00)](#默认参数-1700)
+    -   [2-5 对象代理 (18:52)](#对象代理-1852)
+
+es6-webpack
+-----------
 
 ### 安装
 
 首先下载源码
 
-```shell
+``` {.shell}
 git clone https://github.com/CoderDream/es6-webpack.git
 ```
 
 然后安装
 
-```shell
+``` {.shell}
 npm i
 npm i webpack -g
 npm i webpack-dev-server -g
 ```
 
-如果出现问题：
-[npm install "Unexpected end of JSON input while parsing near"问题](https://www.cnblogs.com/jianxuanbing/p/9158830.html)
+如果出现问题： [npm install "Unexpected end of JSON input while parsing
+near"问题](https://www.cnblogs.com/jianxuanbing/p/9158830.html)
 
 ### 运行
 
-```shell
+``` {.shell}
 npm start
 ```
 
-----------
+------------------------------------------------------------------------
 
+ES6快速入门
+-----------
 
-[TOC] 
-
-
-## ES6快速入门 ##
- 
 快乐动起来呀
 
-Web前端工程师 难度初级 时长 1小时25分 学习人数38905 综合评分9.4 收藏   
+Web前端工程师 难度初级 时长 1小时25分 学习人数38905 综合评分9.4 收藏
 
 [课程地址](https://www.imooc.com/learn/955)
 
-###  简介： ###
+### 简介：
 
 ES6增加了很多新的语法，很多同学学习起来感觉很别扭，有时候也不理解新增加的语法有什么用，对ES6的学习也没有兴趣进而动力不足、学习效率不高。本课程通过ES3、ES5、ES6的对比去实现同一个问题，学员可以非常容易的理解和掌握ES6的强大并产生学习的兴趣。
 
-### 课程须知 ###
+### 课程须知
+
 了解JS基础知识
 
-## 第1章 课程介绍 ##
-对课程整体进行介绍
-### 1-1 课程介绍 (06:13) ###
+第1章 课程介绍
+--------------
 
-1. 通过对比知道为什么要学习ES6
-2. 快速入门ES6的学习
-3. 掌握ES3、ES5、ES6的联系和区别
-4. 学会快速构建ES6的编译环境
+对课程整体进行介绍 \#\#\# 1-1 课程介绍 (06:13) \#\#\#
 
-### 1-2 环境搭建 (10:16) ###
+1.  通过对比知道为什么要学习ES6
+2.  快速入门ES6的学习
+3.  掌握ES3、ES5、ES6的联系和区别
+4.  学会快速构建ES6的编译环境
+
+### 1-2 环境搭建 (10:16)
 
 入口文件 index.js
-```javascript
+
+``` {.javascript}
 // demo 01
 import test from "./src/test"
 test();
@@ -80,7 +96,8 @@ test();
 ```
 
 test.js
-```javascript
+
+``` {.javascript}
 /**
  * [description]
  * @returns {[type]} [description]
@@ -89,19 +106,19 @@ export default function() {
     window.console.log("b")
 }
 ```
-在浏览器中打开
 
+在浏览器中打开
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0101.png)
 
-## 第2章 ES6基础 ###
+第2章 ES6基础
+-------------
 
 通过对比的方式讲解常量、作用域、箭头函数、默认参数、对象代理等知识点
 
-### 2-1 常量 (06:29) ### 
+### 2-1 常量 (06:29)
 
-
-```javascript
+``` {.javascript}
 // ES5 中常量的写法
 Object.defineProperty(window, "PI2", {
     value: 3.1415926,
@@ -116,15 +133,14 @@ console.log(PI);
 
 // PI = 4; // 编译出错
 ```
-运行结果：
 
+运行结果：
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0201.png)
 
-### 2-2 作用域 (14:27) ### 
+### 2-2 作用域 (14:27)
 
-
-```javascript
+``` {.javascript}
 // ES5 中作用域
 const callbacks = [];
 for (var i = 0; i <= 2; i++) {
@@ -194,10 +210,9 @@ console.table([
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0202.png)
 
-### 2-3 箭头函数 (11:19) ### 
+### 2-3 箭头函数 (11:19)
 
-
-```javascript
+``` {.javascript}
 /* eslint-disable */
 
 console.log('ES3,ES5');
@@ -264,10 +279,9 @@ console.log('ES6');
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0203.png)
 
-### 2-4 默认参数 (17:00) ### 
+### 2-4 默认参数 (17:00)
 
-
-```javascript
+``` {.javascript}
 /* eslint-disable */
 console.log('ES3、ES5');
 {
@@ -353,16 +367,15 @@ console.log('ES6 利用扩展运算符合并数组');
     ];
     console.log(other);
 }
-
 ```
+
 运行结果：
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0204.png)
 
-### 2-5 对象代理 (18:52) ### 
+### 2-5 对象代理 (18:52)
 
-
-```javascript
+``` {.javascript}
 /* eslint-disable */
 {
     // ES3,ES5 数据保护
@@ -452,14 +465,10 @@ console.log('ES6 利用扩展运算符合并数组');
     }
 
 }
-
 ```
-
 
 运行结果：
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0205.png)
 
 ![](https://github.com/CoderDream/es6-webpack/blob/master/snapshot/ES6_0206.png)
-
-
